@@ -9,8 +9,12 @@ import time
 from discord.ext import commands, tasks
 from discord.ext.commands import has_permissions
 from itertools import cycle
+from dotenv import load_dotenv
 
-TOKEN = "OTMyOTIxNDk0NDA3ODg0ODAw.Gy9S-w.4SCjLsz7PhW96K_sYrkPxgkE_k09djIuODBvis"
+
+load_dotenv()
+
+TOKEN = os.getenv("TOKEN")
 
 client = commands.Bot(command_prefix="!")
 
