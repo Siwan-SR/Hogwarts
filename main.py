@@ -189,7 +189,6 @@ async def spam_error(ctx, error):
 async def rule(ctx, num: int):
     if num == 1:
         rule_1 = discord.Embed(title="Rule No.1", description="""
-
                                                               Users in Discord are generally considered the base 
                                                               entity. Users can spawn across the entire platform, 
                                                               be members of guilds, participate in text and voice 
